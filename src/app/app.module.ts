@@ -4,25 +4,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
-import {RouterModule, Routes} from '@angular/router';
-import { CommonModule  } from '@angular/common';
+import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.component';
+import {PageInscriptionComponent} from "./pages/page-inscription/page-inscription.component";
+import { PageStatistiquesComponent } from './pages/page-statistiques/page-statistiques.component';
+import { MenuComponent } from './composants/menu/menu.component';
 
-const routes: Routes = [
-  { path: 'login', component: PageLoginComponent },
-  // Define other routes as needed
-];
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    PageLoginComponent
+    PageLoginComponent,
+    PageDashboardComponent,
+    PageInscriptionComponent,
+    PageStatistiquesComponent,
+    MenuComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    RouterModule,
-    CommonModule,
-    RouterModule.forRoot(routes)
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

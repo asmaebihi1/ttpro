@@ -1,0 +1,22 @@
+<div class="accordion" id="accordionExample">
+  <ng-container *ngFor="let menu of menuProperties; let i = index;">
+    <div class="accordion-item">
+      <h2 class="accordion-header" [attr.id]="'heading' + i">
+        <button class="accordion-button" type="button" (click)="toggleCollapse(i)" [attr.aria-expanded]="isCollapseExpanded(i)" [attr.aria-controls]="'collapseOne-' + i">
+          {{menu.titre}}
+        </button>
+      </h2>
+      <div [id]="'collapseOne-' + i" [ngClass]="{ 'accordion-collapse': true, 'collapse': !isCollapseExpanded(i) }" *ngFor="let sousMenu of menu.sousMenu">
+        <div class="accordion-body">
+          {{sousMenu.titre}}
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+
+
+
+
+
