@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Menu} from "./menu";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-menu',
@@ -11,39 +12,39 @@ export class MenuComponent implements OnInit{
     {
     id: '1',
     titre: 'Tableau de bord',
-    icon: '',
+    icon: 'fa fa-chart-line',
     url: '',
     sousMenu: [
       {
-        id: '12',
+        id: '11',
         titre: 'Vue d\'ensemble',
-        icon: '',
+        icon: 'fa fa-chart-pie',
         url: ''
       },
       {
-        id: '21',
+        id: '12',
         titre: 'Statistiques',
-        icon: '',
-        url: ''
+        icon: 'fa-solid fa-chart-simple',
+        url: 'statistiques'
       }
     ]
   },
     {
       id: '2',
       titre: 'Projets',
-      icon: '',
+      icon: 'fa-solid fa-diagram-project',
       url: '',
       sousMenu: [
         {
           id: '21',
           titre: 'Projets',
-          icon: '',
+          icon: 'fa-solid fa-diagram-project',
           url: ''
         },
         {
           id: '22',
           titre: 'Progressions projets',
-          icon: '',
+          icon: 'fa-solid fa-arrow-trend-up',
           url: ''
         },
 
@@ -52,19 +53,19 @@ export class MenuComponent implements OnInit{
     {
       id: '3',
       titre: 'Materiels',
-      icon: '',
+      icon: 'fa-solid fa-dolly',
       url: '',
       sousMenu: [
         {
           id: '31',
           titre: 'Materiels',
-          icon: '',
+          icon: 'fa-solid fa-dolly',
           url: ''
         },
         {
           id: '32',
           titre: 'Mouvements des stocks',
-          icon: '',
+          icon: 'fa-solid fa-arrow-trend-up',
           url: ''
         },
 
@@ -73,19 +74,19 @@ export class MenuComponent implements OnInit{
     {
       id: '4',
       titre: 'Clients',
-      icon: '',
+      icon: 'fa-solid fa-user-tie',
       url: '',
       sousMenu: [
         {
           id: '41',
           titre: 'Clients',
-          icon: '',
+          icon: 'fa-solid fa-user-tie',
           url: ''
         },
         {
           id: '42',
           titre: 'Projets Clients',
-          icon: '',
+          icon: 'fa-solid fa-network-wired',
           url: ''
         }
         ]
@@ -93,19 +94,19 @@ export class MenuComponent implements OnInit{
     {
       id: '5',
       titre: 'Chefs Projets',
-      icon: '',
+      icon: 'fa-solid fa-user-tie',
       url: '',
       sousMenu: [
         {
           id: '51',
           titre: 'Chefs Projets',
-          icon: '',
+          icon: 'fa-solid fa-user-tie',
           url: ''
         },
         {
           id: '52',
           titre: 'Projets Chefs Projets',
-          icon: '',
+          icon: 'fa-solid fa-network-wired',
           url: ''
         }
       ]
@@ -113,31 +114,31 @@ export class MenuComponent implements OnInit{
     {
       id: '6',
       titre: 'Collaborateurs',
-      icon: '',
+      icon: 'fa-solid fa-users-gear',
       url: '',
       sousMenu: [
         {
           id: '61',
           titre: 'Collaborateurs',
-          icon: '',
+          icon: 'fa-solid fa-users-gear',
           url: ''
         },
         {
           id: '62',
           titre: 'Projets Collaborateurs',
-          icon: '',
+          icon: 'fa-solid fa-network-wired',
           url: ''
         },
         {
           id: '63',
           titre: 'Taches',
-          icon: '',
+          icon: 'fa-solid fa-list-check',
           url: '',
           sousMenu: [
             {
               id: '631',
               titre: 'Taches',
-              icon: '',
+              icon: 'fa-solid fa-list-check',
               url: ''
             },
             {
@@ -153,19 +154,19 @@ export class MenuComponent implements OnInit{
     {
       id: '7',
       titre: 'Fournisseurs',
-      icon: '',
+      icon: 'fa-solid fa-user-tie',
       url: '',
       sousMenu: [
         {
           id: '71',
           titre: 'Fournisseurs',
-          icon: '',
+          icon: 'fa-solid fa-user-tie',
           url: ''
         },
         {
           id: '72',
           titre: 'Projets Fournisseurs',
-          icon: '',
+          icon: 'fa-solid fa-network-wired',
           url: ''
         }
       ]
@@ -173,19 +174,19 @@ export class MenuComponent implements OnInit{
     {
       id: '8',
       titre: 'Parametrage',
-      icon: '',
+      icon: 'fa-solid fa-gears',
       url: '',
       sousMenu: [
         {
           id: '81',
           titre: 'Categories',
-          icon: '',
+          icon: 'fa-solid fa-boxes-stacked',
           url: ''
         },
         {
           id: '82',
           titre: 'Utilisateurs',
-          icon: '',
+          icon: 'fa-solid fa-users',
           url: ''
         }
       ]
@@ -203,9 +204,14 @@ export class MenuComponent implements OnInit{
     } else {
       this.expandedIndexes.push(index);
     }}
-  constructor() {
+  constructor(
+    private router: Router
+  ) {
   }
   ngOnInit(): void {
   }
 
+  navigate(url?: string): void {
+    this.router.navigate([url]);
+  }
 }
