@@ -60,13 +60,13 @@ export class MenuComponent implements OnInit{
           id: '31',
           titre: 'Materiels',
           icon: 'fa-solid fa-dolly',
-          url: ''
+          url: 'materiels'
         },
         {
           id: '32',
           titre: 'Mouvements des stocks',
           icon: 'fa-solid fa-arrow-trend-up',
-          url: ''
+          url: 'mvtstk'
         },
 
       ]

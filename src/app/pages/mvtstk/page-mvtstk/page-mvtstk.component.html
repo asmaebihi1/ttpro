@@ -1,0 +1,45 @@
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- Bootstrap JavaScript (popper.js and jQuery are required) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<div class="col">
+  <div class="row m-3 mr-0">
+    <div class="col-md-8 p-0">
+      <h1>Mouvement du stock</h1>
+    </div>
+    <div class="col-md-4 m-0 p-0 text-right">
+      <app-boutton-action></app-boutton-action>
+    </div>
+  </div>
+  <div class="col m-3">
+    <div class="accordion" id="accordionExample">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h2 class="mb-0">
+            <button class="btn btn-link btn-block text-left" type="button" (click)="toggleCollapse()" [attr.aria-expanded]="isCollapseExpanded()" [attr.aria-controls]="'collapseOne'">
+              <app-detail-mvt-stk-materiel></app-detail-mvt-stk-materiel>
+            </button>
+          </h2>
+        </div>
+        <div id="collapseOne" [ngClass]="{'collapse': !isCollapseExpanded(), 'show': isCollapseExpanded()}" [attr.aria-labelledby]="'headingOne'">
+          <div class="card-body">
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="row mb-3">
+    <div class="col-md-12 text-center">
+      <app-pagination></app-pagination>
+    </div>
+  </div>
+</div>
+

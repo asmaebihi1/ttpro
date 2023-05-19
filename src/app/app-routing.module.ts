@@ -6,6 +6,10 @@ import {PageDashboardComponent} from "./pages/page-dashboard/page-dashboard.comp
 import {PageInscriptionComponent} from "./pages/page-inscription/page-inscription.component";
 import {PageStatistiquesComponent} from "./pages/page-statistiques/page-statistiques.component";
 import {PageProjetsComponent} from "./pages/projets/page-projets/page-projets.component";
+import {NouvelProjetComponent} from "./pages/projets/nouvel-projet/nouvel-projet.component";
+import {PageMaterielsComponent} from "./pages/materiels/page-materiels/page-materiels.component";
+import {NouvelMaterielComponent} from "./pages/materiels/nouvel-materiel/nouvel-materiel.component";
+import {PageMvtstkComponent} from "./pages/mvtstk/page-mvtstk/page-mvtstk.component";
 
 const routes: Routes = [
 
@@ -28,7 +32,23 @@ const routes: Routes = [
       {
         path: 'projets',
         component: PageProjetsComponent
-      }
+      },
+      {
+        path: 'nouvelprojet',
+        component: NouvelProjetComponent
+      },
+      {
+        path: 'materiels',
+        component: PageMaterielsComponent
+      },
+      {
+        path: 'nouvelmateriel',
+        component: NouvelMaterielComponent
+      },
+      {
+        path: 'mvtstk',
+        component: PageMvtstkComponent
+      },
     ]
   }
 

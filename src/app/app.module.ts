@@ -11,6 +11,15 @@ import { MenuComponent } from './composants/menu/menu.component';
 import { HeaderComponent } from './composants/header/header.component';
 import { PageProjetsComponent } from './pages/projets/page-projets/page-projets.component';
 import { DetailProjetComponent } from './composants/detail-projet/detail-projet.component';
+import { PaginationComponent } from './composants/pagination/pagination.component';
+import { BouttonActionComponent } from './composants/boutton-action/boutton-action.component';
+import { NouvelProjetComponent } from './pages/projets/nouvel-projet/nouvel-projet.component';
+import { PageMaterielsComponent } from './pages/materiels/page-materiels/page-materiels.component';
+import { DetailMaterielComponent } from './composants/detail-materiel/detail-materiel.component';
+import { NouvelMaterielComponent } from './pages/materiels/nouvel-materiel/nouvel-materiel.component';
+import { PageMvtstkComponent } from './pages/mvtstk/page-mvtstk/page-mvtstk.component';
+import { DetailMvtStkMaterielComponent } from './composants/detail-mvt-stk-materiel/detail-mvt-stk-materiel.component';
+import { DetailMvtStkComponent } from './composants/detail-mvt-stk/detail-mvt-stk.component';
 
 
 
@@ -24,7 +33,16 @@ import { DetailProjetComponent } from './composants/detail-projet/detail-projet.
     MenuComponent,
     HeaderComponent,
     PageProjetsComponent,
-    DetailProjetComponent
+    DetailProjetComponent,
+    PaginationComponent,
+    BouttonActionComponent,
+    NouvelProjetComponent,
+    PageMaterielsComponent,
+    DetailMaterielComponent,
+    NouvelMaterielComponent,
+    PageMvtstkComponent,
+    DetailMvtStkMaterielComponent,
+    DetailMvtStkComponent
 
   ],
   imports: [
