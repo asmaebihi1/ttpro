@@ -39,7 +39,7 @@ export class MenuComponent implements OnInit{
           id: '21',
           titre: 'Projets',
           icon: 'fa-solid fa-diagram-project',
-          url: ''
+          url: 'projets'
         },
         {
           id: '22',

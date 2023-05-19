@@ -8,6 +8,9 @@ import { PageDashboardComponent } from './pages/page-dashboard/page-dashboard.co
 import {PageInscriptionComponent} from "./pages/page-inscription/page-inscription.component";
 import { PageStatistiquesComponent } from './pages/page-statistiques/page-statistiques.component';
 import { MenuComponent } from './composants/menu/menu.component';
+import { HeaderComponent } from './composants/header/header.component';
+import { PageProjetsComponent } from './pages/projets/page-projets/page-projets.component';
+import { DetailProjetComponent } from './composants/detail-projet/detail-projet.component';
 
 
 
@@ -18,7 +21,10 @@ import { MenuComponent } from './composants/menu/menu.component';
     PageDashboardComponent,
     PageInscriptionComponent,
     PageStatistiquesComponent,
-    MenuComponent
+    MenuComponent,
+    HeaderComponent,
+    PageProjetsComponent,
+    DetailProjetComponent
 
   ],
   imports: [
