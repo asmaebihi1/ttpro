@@ -26,15 +26,29 @@
             </button>
           </h2>
         </div>
-        <div id="collapseOne" [ngClass]="{'collapse': !isCollapseExpanded(), 'show': isCollapseExpanded()}" [attr.aria-labelledby]="'headingOne'">
+        <div id="collapseOne" [ngClass]="{'collapse': !isCollapseExpanded(), 'show': isCollapseExpanded()}" [attr.aria-labelledby]="'headingOne'" style="max-height: 300px;
+          overflow-y:scroll ">
           <div class="card-body">
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+            <app-detail-mvt-stk></app-detail-mvt-stk>
+            <app-detail-mvt-stk></app-detail-mvt-stk>
             <app-detail-mvt-stk></app-detail-mvt-stk>
           </div>
         </div>
       </div>
     </div>
+<!-- other -->
 
 
+
+
+
+
+
+    <!-- other -->
   </div>
   <div class="row mb-3">
     <div class="col-md-12 text-center">

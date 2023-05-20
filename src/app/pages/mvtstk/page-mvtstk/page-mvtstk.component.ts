@@ -7,15 +7,16 @@ import { Component } from '@angular/core';
 })
 export class PageMvtstkComponent {
 
-  isExpanded = true;
+  isExpanded2 = true;
 
   // Function to toggle the collapse state
   toggleCollapse() {
-    this.isExpanded = !this.isExpanded;
+    this.isExpanded2 = !this.isExpanded2;
   }
 
   // Function to determine whether the collapse is expanded or not
   isCollapseExpanded() {
-    return this.isExpanded;
+    return this.isExpanded2;
   }
+
 }
