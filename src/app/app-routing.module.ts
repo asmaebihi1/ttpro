@@ -10,6 +10,11 @@ import {NouvelProjetComponent} from "./pages/projets/nouvel-projet/nouvel-projet
 import {PageMaterielsComponent} from "./pages/materiels/page-materiels/page-materiels.component";
 import {NouvelMaterielComponent} from "./pages/materiels/nouvel-materiel/nouvel-materiel.component";
 import {PageMvtstkComponent} from "./pages/mvtstk/page-mvtstk/page-mvtstk.component";
+import {PageCollaborateurComponent} from "./pages/collaborateur/page-collaborateur/page-collaborateur.component";
+import {PageFournisseurComponent} from "./pages/fournisseur/page-fournisseur/page-fournisseur.component";
+import {NouvelCltComponent} from "./composants/nouvel-clt/nouvel-clt.component";
+import {NouvelFrsComponent} from "./composants/nouvel-frs/nouvel-frs.component";
+import {PageCmdColFrsComponent} from "./pages/page-cmd-col-frs/page-cmd-col-frs.component";
 
 const routes: Routes = [
 
@@ -49,6 +54,30 @@ const routes: Routes = [
         path: 'mvtstk',
         component: PageMvtstkComponent
       },
+      {
+        path: 'collaborateurs',
+        component: PageCollaborateurComponent
+      },
+      {
+        path: 'projetscollaborateur',
+        component: PageCmdColFrsComponent
+      },
+      {
+        path: 'fournisseurs',
+        component: PageFournisseurComponent
+      },
+      {
+        path: 'projetsfournisseur',
+        component: PageCmdColFrsComponent
+      },
+      {
+        path: 'nouvelcollaborateur',
+        component: NouvelCltComponent
+      },
+      {
+        path: 'nouvelfournisseur',
+        component: NouvelFrsComponent
+      }
     ]
   }
 

@@ -43,3 +43,50 @@ body{
   text-align: right;
 }
 
+
+
+.red-color{
+  color: red;
+}
+
+.accordion {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  background-color: #f2f2f2;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-button {
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.accordion-collapse {
+  padding: 10px;
+}
+
+.collapse {
+  transition: height 0.3s ease;
+  height: 0;
+  overflow: hidden;
+}
+
+.show .collapse {
+  height: available;
+}
+

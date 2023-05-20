@@ -121,13 +121,13 @@ export class MenuComponent implements OnInit{
           id: '61',
           titre: 'Collaborateurs',
           icon: 'fa-solid fa-users-gear',
-          url: ''
+          url: 'collaborateurs'
         },
         {
           id: '62',
           titre: 'Projets Collaborateurs',
           icon: 'fa-solid fa-network-wired',
-          url: ''
+          url: 'projetscollaborateur'
         },
         {
           id: '63',
@@ -161,13 +161,13 @@ export class MenuComponent implements OnInit{
           id: '71',
           titre: 'Fournisseurs',
           icon: 'fa-solid fa-user-tie',
-          url: ''
+          url: 'fournisseurs'
         },
         {
           id: '72',
           titre: 'Projets Fournisseurs',
           icon: 'fa-solid fa-network-wired',
-          url: ''
+          url: 'projetsfournisseur'
         }
       ]
     },

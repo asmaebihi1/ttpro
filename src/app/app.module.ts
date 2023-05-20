@@ -20,6 +20,15 @@ import { NouvelMaterielComponent } from './pages/materiels/nouvel-materiel/nouve
 import { PageMvtstkComponent } from './pages/mvtstk/page-mvtstk/page-mvtstk.component';
 import { DetailMvtStkMaterielComponent } from './composants/detail-mvt-stk-materiel/detail-mvt-stk-materiel.component';
 import { DetailMvtStkComponent } from './composants/detail-mvt-stk/detail-mvt-stk.component';
+import { DetailColFrsComponent } from './composants/detail-col-frs/detail-col-frs.component';
+import { PageCollaborateurComponent } from './pages/collaborateur/page-collaborateur/page-collaborateur.component';
+import { PageFournisseurComponent } from './pages/fournisseur/page-fournisseur/page-fournisseur.component';
+import { DetailFournisseurComponent } from './composants/detail-fournisseur/detail-fournisseur.component';
+import { NouvelCltComponent } from './composants/nouvel-clt/nouvel-clt.component';
+import { NouvelFrsComponent } from './composants/nouvel-frs/nouvel-frs.component';
+import { DetailProjetColComponent } from './composants/detail-projet-col/detail-projet-col.component';
+import { DetailCmdComponent } from './composants/detail-cmd/detail-cmd.component';
+import { PageCmdColFrsComponent } from './pages/page-cmd-col-frs/page-cmd-col-frs.component';
 
 
 
@@ -42,7 +51,16 @@ import { DetailMvtStkComponent } from './composants/detail-mvt-stk/detail-mvt-st
     NouvelMaterielComponent,
     PageMvtstkComponent,
     DetailMvtStkMaterielComponent,
-    DetailMvtStkComponent
+    DetailMvtStkComponent,
+    DetailColFrsComponent,
+    PageCollaborateurComponent,
+    PageFournisseurComponent,
+    DetailFournisseurComponent,
+    NouvelCltComponent,
+    NouvelFrsComponent,
+    DetailProjetColComponent,
+    DetailCmdComponent,
+    PageCmdColFrsComponent
 
   ],
   imports: [
